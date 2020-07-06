@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- file quiz.html -->
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <h1>Econ Quiz 1</h1>
+    <form action="https://script.google.com/macros/s/AKfycbwyCQmd3t3k0jxptaVi479Itzdqi4k0j7DkUX_ThnEnqNujUoGO/exec" method="POST">
+      Enter your first name:
+      <input name="firstname" type="text"/>
+      Enter your last name:
+      <input name="lastname" type="text"/>
+      Enter your email:
+      <input name="email" type="email"/> 
+      <input id="time" name="starttime" type="hidden"/>
+<br/><br/>
+      <input type="submit" value="Submit Quiz Registration"/>
+    </form>
+
+    <script>
+      var currDate = new Date();
+      document.getElementById("time").setAttribute("value", currDate);
+    </script>
+  </body>
+</html>
