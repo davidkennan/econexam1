@@ -20,7 +20,9 @@
 
     <script>
       var currDate = new Date();
-      document.getElementById("time").setAttribute("value", currDate);
+      var intlDateObj = new Intl.DateTimeFormat('en-US', {timeZone: "America/New_York"});
+      var normalizedTime = intlDateObj.format(currDate);
+      document.getElementById("time").setAttribute("value", normalizedTime);
     </script>
   </body>
 </html>
